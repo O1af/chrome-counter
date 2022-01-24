@@ -15,3 +15,5 @@ chrome.runtime.onInstalled.addListener(async () => {
 	const count = await getTabCount();
 	chrome.action.setBadgeText({ text: count.toString() });
 });
+
+const messages = [];
